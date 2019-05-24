@@ -1,7 +1,6 @@
-gg.alert ("Script online Robbix")
 gg.setVisible(true)
 HOME = 1
-gg.alert("Enjoy!") --[[ 1 ]]
+gg.alert("Online script by Robeth") --[[ 1 ]]
 
 function HOME()
   MN = gg.choice({
