@@ -1,14 +1,4 @@
-local L1_1
-L0_0 = gg
-L0_0 = L0_0.alert
-L1_1 = "Welcome Pro Player"
-L0_0(L1_1)
-L0_0, L1_1 = nil, nil
-L0_0 = loadfile
-L1_1 = filename
-L0_0, L1_1 = L0_0(L1_1)
-err = L1_1
-f = L0_0
+gg.alert ("Script online Robbix")
 gg.setVisible(true)
 HOME = 1
 gg.alert("Enjoy!") --[[ 1 ]]
