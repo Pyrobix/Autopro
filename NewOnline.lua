@@ -1,4 +1,4 @@
-if (debug.getinfo(2) ~= nil) then print ("Hook is attached﻿﻿﻿﻿.") os.exit﻿() end
+if (debug.getinfo(1) ~= nil) then print ("Hook is attached﻿﻿﻿﻿.") os.exit﻿() end
 local L1_1
 L0_0 = gg
 L0_0 = L0_0.alert
