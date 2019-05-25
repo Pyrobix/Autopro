@@ -18,16 +18,16 @@ function HOME()
   if MN == nil then
   else
     if MN == 1 then
-      BP()
+      RBTH()
     end
     if MN == 2 then
-     AIM()
+     JL()
     end
     if MN == 3 then
-     WHK()
+     CMR5X()
     end
     if MN == 4 then
-     SJ()
+     HSDMG()
     end
     if MN == 5 then
      BLACKSKY()
@@ -47,7 +47,7 @@ function HOME()
   end
   PUBGMH = -1
 end
-function BP()
+function RBTH()
 gg.clearResults()
 gg.setRanges(gg.REGION_BAD)
 gg.searchNumber("274,677,779D;2.25000452995;2;1.6623054e-19", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -99,7 +99,7 @@ gg.toast("NoRecoil 7½8")
 gg.clearResults()
 end
 
-function WHK()
+function CMR5X()
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.clearResults()
 gg.searchNumber("220;178;15 ", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -110,7 +110,7 @@ gg.clearResults()
 gg.toast("Camera player x5 7½8")
 gg.clearResults()
 end
-function SJ()
+function HSDMG()
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -120,7 +120,7 @@ gg.clearResults()
 gg.toast("Headshoot++ Damage++ Activated")
 gg.clearResults()
 end
-function AIM()
+function JL()
 gg.clearResults()
 gg.setRanges(gg.REGION_BAD)
 gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
