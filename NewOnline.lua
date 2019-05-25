@@ -166,7 +166,7 @@ gg.toast("NoRecoil 7½8")
 gg.clearResults()
 end
 function SIT()
-ps = gg.multiChoice ({"ON","OFF","<<BACK<<"}),nil,"Menu ON/OFF Prone scope"
+ps = gg.multiChoice ({"ON","OFF","<<BACK<<"},nil,"Menu ON/OFF Prone scope")
 if ps[1] == true then SITON() end
 if ps[2] == true then SITOFF() end
 if ps[3] == true then HOME() end
@@ -214,7 +214,7 @@ gg.clearResults()
 gg.toast("RunSpeed Up+ OFF")
 end
 function SPD()
-cd = gg.multiChoice ({"ON","OFF","<<BACK<<"}),nil,"Menu ON/OFF Speedhack"
+cd = gg.multiChoice ({"ON","OFF","<<BACK<<"},nil,"Menu ON/OFF Speedhack")
 if cd[1] == true then SPDON() end
 if cd[2] == true then SPDOFF() end
 if cd[3] == true then HOME() end
