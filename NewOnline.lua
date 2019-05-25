@@ -8,7 +8,7 @@ function HOME()
     "AAN all in one (Lobby)",
     "Camera x5 (Sblm pesawat)",
     "HS + DMG (pesawat)",
-    "Antenna lvl 3 (Sblm pesawat)",
+    "Black sky (Game)",
     "Prone scope (stlh ambil senjata)",
     "Speedrun (BETA) ON",
     "Speedrun (BETA) OFF",
@@ -30,13 +30,13 @@ function HOME()
      SJ()
     end
     if MN == 5 then
-     ATN()
+     BLACKSKY()
     end
     if MN == 6 then
      SIT()
     end
     if MN == 7 then
-     WHALL()
+     SPDON()
     end
     if MN == 8 then
      SPDOFF()
@@ -178,46 +178,17 @@ gg.getResults(100)
 gg.editAll("240", gg.TYPE_FLOAT)
 gg.toast("Prone Scope")
 end
-function ATN()
-gg.clearResults()
+function BLACKSKY()
 gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("7.1689529418945", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(3)
-gg.editAll("88996", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("7.4993133544922", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("7.4993133544922", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(1)
-gg.editAll("88996", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("18.46202087402", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(3)
-gg.editAll("88996", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("3.4779739379883;2.8345839977264;3.1967880725861;3.8841888904572;3.1528658866882::208", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("3.4779739379883", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(3)
-gg.editAll("88996", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("6.95975875854", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(999)
-gg.editAll("88996", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("88996", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("100F;1F;1,008,981,770D:99", gg.TYPE_FLOAT, false)
+gg.searchNumber("100", gg.TYPE_FLOAT, false)
 gg.getResults(100)
-gg.editAll("0.88996", gg.TYPE_FLOAT)
+gg.editAll("-90", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("0.88996", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(30)
-gg.editAll("88996", gg.TYPE_FLOAT)
+gg.toast("☬ Black Sky ☬")
 end
-function WHALL()
+function SPDON()
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("50.0;1,000.0;60,000.0;1.0;50.0;10.0:613", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
