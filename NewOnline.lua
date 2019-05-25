@@ -166,13 +166,23 @@ gg.toast("NoRecoil 7½8")
 gg.clearResults()
 end
 function SIT()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("18.38614463806;0.53446578979;-3.42663908005F;0.69551950693F::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResultsCount()
-gg.searchNumber("18.38614463806;0.53446578979", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
+ps = gg.multiChoice ({"ON","OFF","<<BACK<<"}),nil,"Menu ON/OFF Prone scope"
+if ps[1] == true then SITON() end
+if ps[2] == true then SITOFF() end
+if ps[3] == true then HOME() end
+if ps == nil then else end
+end
+function SITON()
+gg.setRanges(gg.REGION_ANONYMOUS) gg.searchNumber("18.38614463806;0.53446578979;-3.42663908005F;0.69551950693F::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("0.53446578979", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1) gg.getResults(100)
 gg.editAll("240", gg.TYPE_FLOAT)
-gg.toast("Prone Scope")
+gg.toast("Prone Scope ON")
+end 
+function SITOFF()
+gg.setRanges(gg.REGION_ANONYMOUS) gg.searchNumber("18.38614463806;240;-3.42663908005F;0.69551950693F::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("240", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1) gg.getResults(100)
+gg.editAll("0.53446578979", gg.TYPE_FLOAT)
+gg.toast("Prone Scope OFF")
 end
 function BLACKSKY()
 gg.setRanges(gg.REGION_BAD)
@@ -204,7 +214,7 @@ gg.clearResults()
 gg.toast("RunSpeed Up+ OFF")
 end
 function SPD()
-cd = gg.multiChoice ({"ON✓","OFF×","<<BACK<<"}),nil,"Menu ON/OFF Speedhack"
+cd = gg.multiChoice ({"ON","OFF","<<BACK<<"}),nil,"Menu ON/OFF Speedhack"
 if cd[1] == true then SPDON() end
 if cd[2] == true then SPDOFF() end
 if cd[3] == true then HOME() end
