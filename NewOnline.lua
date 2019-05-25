@@ -10,8 +10,7 @@ function HOME()
     "HS + DMG (pesawat)",
     "Black sky (Game)",
     "Prone scope (stlh ambil senjata)",
-    "Speedrun (BETA) ON",
-    "Speedrun (BETA) OFF",
+    "Speedrun (Menu ON/OFF)",
     
     "Exit"
   }, nil, "Only PRO use merah merah")
@@ -36,12 +35,9 @@ function HOME()
      SIT()
     end
     if MN == 7 then
-     SPDON()
+     SPD()
     end
     if MN == 8 then
-     SPDOFF()
-    end
-    if MN == 9 then
      CLOSE()
      end
   end
@@ -207,6 +203,13 @@ gg.editAll("1.0", gg.TYPE_FLOAT) -- balikin ke original value
 gg.clearResults()
 gg.toast("RunSpeed Up+ OFF")
 end
+function SPD()
+cd = gg.multiChoice ({"ON✓","OFF×","<<BACK<<"}),nil,"Menu ON/OFF Speedhack"
+if cd[1] == true then SPDON() end
+if cd[2] == true then SPDOFF() end
+if cd[3] == true then HOME() end
+if cd == nil then else end
+end
 function CLOSE()
      print("Ciyee habis pakai merah merah")
   gg.skipRestoreState()
@@ -223,6 +226,3 @@ while true do
     HOME()
   end
 end
-L0_0 = L0_0
-L0_0 = L0_0
-L0_0 = L0_0
