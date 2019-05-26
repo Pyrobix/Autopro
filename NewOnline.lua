@@ -7,7 +7,7 @@ function HOME()
     "Robeth all in one (Lobby)",
     "AAN all in one (Lobby)",
     "Camera x5 (Sblm pesawat)",
-    "HS + DMG (Menu ON/OFF)",
+    "HS + DMG (Menu Level)",
     "Black sky (Game)",
     "Prone scope (Menu ON/OFF)",
     "Speedrun (Menu ON/OFF)",
