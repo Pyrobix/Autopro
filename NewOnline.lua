@@ -108,15 +108,16 @@ gg.clearResults()
 end
 function HSDMG()
 hd = gg.multiChoice ({"Low","Medium","Parah","<<BACK<<"},nil,"Menu Auto HS")
-if hd[1] == true then HSDMG(1) end
-if hd[2] == true then HSDMG(2) end
-if hd[3] == true then HSDMG(3) end
+if hd[1] == true then HSDMG1() end
+if hd[2] == true then HSDMG2() end
+if hd[3] == true then HSDMG3() end
 if hd == nil then else end
 end
 function HSDMG1()
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("9.20161819458;23;25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResultsCount()
 gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10)
 gg.editAll("150", gg.TYPE_FLOAT)
@@ -128,6 +129,7 @@ function HSDMG2()
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("9.20161819458;23;25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResultsCount()
 gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10)
 gg.editAll("250", gg.TYPE_FLOAT)
@@ -139,6 +141,7 @@ function HSDMG3()
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("9.20161819458;23;25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResultsCount()
 gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10)
 gg.editAll("450", gg.TYPE_FLOAT)
