@@ -11,6 +11,7 @@ function HOME()
     "Black sky (Game)",
     "Prone scope (Menu ON/OFF)",
     "Speedrun (Menu ON/OFF)",
+    "Antenna Kepala (BETA)",
     
     "Exit"
   }, nil, "Only PRO use merah merah")
@@ -38,6 +39,9 @@ function HOME()
      SPD()
     end
     if MN == 8 then
+     ATNHD()
+    end
+    if MN == 9 then
      CLOSE()
      end
   end
@@ -246,6 +250,26 @@ if cd[1] == true then SPDON() end
 if cd[2] == true then SPDOFF() end
 if cd[3] == true then HOME() end
 if cd == nil then else end
+end
+function ATNHD()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("88.50576019287F;87.27782440186F;1F::50", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(7)
+gg.editAll("1.96875", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("1.96875F;1.96875F;-100.91194152832;1F::50", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll("976", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("0.98900693655~0.98900723457;0.14786802232~0.14786840975;1.1920926e-7::9", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResultCount()
+gg.searchNumber("0.98900693655~0.98900723457", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("16000", gg.TYPE_FLOAT)
+gg.toast("☬ Antena Head ☬")
 end
 function CLOSE()
      print("Ciyee habis pakai merah merah")
