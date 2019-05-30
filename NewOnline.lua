@@ -115,7 +115,7 @@ hd = gg.multiChoice ({"Low","Medium","Parah","<<BACK<<"},nil,"Menu Auto HS")
 if hd[1] == true then HSDMG1() end
 if hd[2] == true then HSDMG2() end
 if hd[3] == true then HSDMG3() end
-if hd == nil then HOME() end
+if hd[4] == true then HOME() end
 end
 function HSDMG1()
 gg.clearResults()
@@ -201,7 +201,7 @@ ps = gg.multiChoice ({"ON","OFF","<<BACK<<"},nil,"Menu ON/OFF Prone scope")
 if ps[1] == true then SITON() end
 if ps[2] == true then SITOFF() end
 if ps[3] == true then HOME() end
-if ps == nil then HOME() end
+if ps == nil then else end
 end
 function SITON()
 gg.setRanges(gg.REGION_ANONYMOUS) gg.searchNumber("18.38614463806;0.53446578979;-3.42663908005F;0.69551950693F::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
