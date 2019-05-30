@@ -42,7 +42,9 @@ function HOME()
      ATNHD()
     end
     if MN == 9 then
-     CLOSE()
+      gg.skipRestoreState()
+      gg.setVisible(true)
+      os.exit()
      end
   end
   PUBGMH = -1
