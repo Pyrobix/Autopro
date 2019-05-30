@@ -10,7 +10,7 @@ function HOME()
     "HS + DMG (Menu Level)",
     "Black sky (Game)",
     "Prone scope (Menu ON/OFF)",
-    "Speedrun (Menu ON/OFF)",
+    "Speedrun (Menu Level)",
     "Antenna Kepala (BETA)",
     
     "Exit"
@@ -225,13 +225,23 @@ gg.editAll("-90", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.toast("☬ Black Sky ☬")
 end
-function SPDON()
+function SPD1()
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("50.0;1,000.0;60,000.0;1.0;50.0;10.0:613", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.refineNumber("1.0", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(150)
 gg.editAll("1.25", gg.TYPE_FLOAT) -- edit sesuka ente makin gede makin kenceng
+gg.clearResults()
+gg.toast("RunSpeed Up+ Activated")
+end
+function SPD2()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("50.0;1,000.0;60,000.0;1.0;50.0;10.0:613", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("1.0", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(150)
+gg.editAll("1.5", gg.TYPE_FLOAT) -- edit sesuka ente makin gede makin kenceng
 gg.clearResults()
 gg.toast("RunSpeed Up+ Activated")
 end
@@ -245,10 +255,11 @@ gg.clearResults()
 gg.toast("RunSpeed Up+ OFF")
 end
 function SPD()
-cd = gg.multiChoice ({"ON","OFF","<<BACK<<"},nil,"Menu ON/OFF Speedhack")
-if cd[1] == true then SPDON() end
-if cd[2] == true then SPDOFF() end
-if cd[3] == true then HOME() end
+cd = gg.multiChoice ({"Lvl 1","Lvl 2","OFF (beta)","<<BACK<<"},nil,"Menu Level Speedhack")
+if cd[1] == true then SPD1() end
+if cd[2] == true then SPD2() end
+if cd[3] == true then SPDOFF() end
+if cd[4] == true then HOME() end
 if cd == nil then else end
 end
 function ATNHD()
