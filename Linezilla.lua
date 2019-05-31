@@ -7,7 +7,7 @@ function HOME()
     "Lobby",
     "In Game",
     
-    "Exit"
+    "Exit",
   }, nil, "Linezilla v1.0")
   if MN == nil then
   else
