@@ -127,7 +127,7 @@ function MENU2()
   if MS == 2 then PRONE() end
   if MS == 3 then ANTN() end
   if MS == 4 then SPD() end
-  if MS == 5 then BLCKSKY() end
+  if MS == 5 then BLACKSKY() end
   if MS == 6 then CMR5X() end
   if MS == 7 then HOME() end
   if MS == nil then else end
