@@ -707,12 +707,6 @@ gg.getResults(999)
 gg.editAll("88996", gg.TYPE_FLOAT)
 gg.toast("☬ Bullet Antena ☬")
 end
-function CLOSE()
-     print("Ciyee habis pakai merah merah")
-  gg.skipRestoreState()
-  gg.setVisible(true)
-  os.exit()
-end
 while true do
   if gg.isVisible(true) then
     PUBGMH = 1
