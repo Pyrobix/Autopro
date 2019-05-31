@@ -113,9 +113,6 @@ gg.toast("Camera player x5 7½8")
 gg.clearResults()
 end
 
-function TESTMENU()
- 
-
 function HSC()
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
@@ -134,7 +131,7 @@ local Result = gg.prompt({"Level 1","Level 2","Custom Value","Custom Value(Harus
 else
  if Result[1] then HSDMG1() end
  if Result[2] then HSDMG2() end
- if Result[3] and Result[4] then HSC{} end
+ if Result[3] and Result[4] then HSC() end
  if Result[5] then HOME() end
 
 function HSDMG1()
