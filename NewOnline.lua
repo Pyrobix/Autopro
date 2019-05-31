@@ -112,13 +112,32 @@ gg.clearResults()
 gg.toast("Camera player x5 7½8")
 gg.clearResults()
 end
-function HSDMG()
-hd = gg.choice ({"Low","Medium","Parah","<<BACK<<"},nil,"Menu Auto HS")
-if hd == 1 then HSDMG1() end
-if hd == 2 then HSDMG2() end
-if hd == 3 then HSDMG3() end
-if hd == 4 then HOME() end
+
+function TESTMENU()
+ 
+
+function HSC()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll(Result[4], gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Custom Auto HS Activated")
+gg.clearResults()
 end
+
+function HSDMG()
+local Result = gg.prompt({"Level 1","Level 2","Custom Value","Custom Value(Harus dicentang)\nMasukan Value antara 150 - 300","GO BACK TO MENU"},{false,false,false,0,false},{"checkbox", "checkbox","checkbox","number","checkbox"},nil,"Pilih AUTO HS + DMG")
+ if Result == nil then
+    gg.alert('Canceled')
+else
+ if Result[1] then HSDMG1() end
+ if Result[2] then HSDMG2() end
+ if Result[3] and Result[4] then HSC{} end
+ if Result[5] then HOME() end
+end
+
 function HSDMG1()
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
