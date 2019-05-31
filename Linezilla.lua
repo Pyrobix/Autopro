@@ -6,7 +6,6 @@ function HOME()
   MN = gg.choice({
     "Lobby",
     "In Game",
-    "Test Menu",
     
     "Exit"
   }, nil, "Linezilla v1.0")
@@ -14,8 +13,7 @@ function HOME()
   else
     if MN == 1 then MENU1() end
     if MN == 2 then MENU2() end
-    if MN == 3 then TESTMENU() end
-    if MN == 4 then CLOSE() end
+    if MN == 3 then CLOSE() end
   end
   PUBGMH = -1
 end
@@ -26,7 +24,7 @@ function CLOSE()
   os.exit()
 end
 
-function TESTMENU()
+function HSDMG()
  local Result = gg.prompt({"Level 1","Level 2","Custom Value","Custom Value(Harus dicentang)\nMasukan Value antara 150 - 300","GO BACK TO MENU"},{false,false,false,0,false},{"checkbox", "checkbox","checkbox","number","checkbox"},nil,"Pilih AUTO HS + DMG")
  if Result == nil then
     gg.alert('Canceled')
@@ -549,18 +547,6 @@ gg.editAll("6", gg.TYPE_DWORD)
 gg.toast("Yellow + HDR")
 end
 
-function HSDMG()
-  HD = gg.choice({
-    "Level 1",
-    "Level 2",
-
-    "<<Back",
-  },nil,"MENU HS + DMG")
-  if HD == 1 then HSDMG1() end
-  if HD == 2 then HSDMG2() end
-  if HD == 3 then MENU2() end
-  if HD == nil then else end
-end
 function HSDMG1()
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
