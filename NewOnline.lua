@@ -130,13 +130,12 @@ end
 function HSDMG()
 local Result = gg.prompt({"Level 1","Level 2","Custom Value","Custom Value(Harus dicentang)\nMasukan Value antara 150 - 300","GO BACK TO MENU"},{false,false,false,0,false},{"checkbox", "checkbox","checkbox","number","checkbox"},nil,"Pilih AUTO HS + DMG")
  if Result == nil then
-    gg.alert('Canceled')
+ gg.alert('Canceled')
 else
  if Result[1] then HSDMG1() end
  if Result[2] then HSDMG2() end
  if Result[3] and Result[4] then HSC{} end
  if Result[5] then HOME() end
-end
 
 function HSDMG1()
 gg.clearResults()
