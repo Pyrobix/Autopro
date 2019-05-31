@@ -1,21 +1,3 @@
-Skip to content
- 
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@Pyrobix 
-0
-0 0 Pyrobix/Autopro
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Security  Insights  Settings
-Autopro/Linezilla.lua
-@Pyrobix Pyrobix Update Linezilla.lua
-5d0c9c6 8 minutes ago
-729 lines (690 sloc)  24.6 KB
-    
 gg.setVisible(true)
 HOME = 1
 gg.alert("Online script by Robeth") --[[ 1 ]]
