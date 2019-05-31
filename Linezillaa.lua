@@ -8,7 +8,7 @@ function HOME()
     "In Game",
     
     "Exit",
-  }, nil, "Linezilla v1.0")
+  }, nil, "Linezilla Online Script")
   if MN == nil then
   else
     if MN == 1 then MENU1() end
