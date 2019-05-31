@@ -27,7 +27,7 @@ function CLOSE()
 end
 
 function TESTMENU()
- local Result = gg.prompt({"Level 1","Level 2","Custom Value","Custom Value(Harus dicentang)\nMasukan Value antara 150 - 300","GO BACK TO MENU"},{false,false,false,0,false},{"checkbox", "checkbox","checkbox","number","checkbox"},nil,"Pilih AUTO HS + DMG")
+  Result = gg.prompt({"Level 1","Level 2","Custom Value","Custom Value(Harus dicentang)\nMasukan Value antara 150 - 300","GO BACK TO MENU"},{false,false,false,0,false},{"checkbox", "checkbox","checkbox","number","checkbox"},nil,"Pilih AUTO HS + DMG")
  if Result == nil then
     gg.alert('Canceled')
 else
