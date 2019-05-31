@@ -31,7 +31,7 @@ function TESTMENU()
  if Result[1] then HSDMG1() end
  if Result[2] then HSDMG2() end
  if Result[3] and Result[4] then HSC{} end
- if Result == nil then else end
+ if Result == nil then HOME() end
 end
 
 function HSC()
