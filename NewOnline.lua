@@ -113,11 +113,11 @@ gg.toast("Camera player x5 7½8")
 gg.clearResults()
 end
 function HSDMG()
-hd = gg.multiChoice ({"Low","Medium","Parah","<<BACK<<"},nil,"Menu Auto HS")
-if hd[1] == true then HSDMG1() end
-if hd[2] == true then HSDMG2() end
-if hd[3] == true then HSDMG3() end
-if hd[4] == true then HOME() end
+hd = gg.choice ({"Low","Medium","Parah","<<BACK<<"},nil,"Menu Auto HS")
+if hd == 1 then HSDMG1() end
+if hd == 2 then HSDMG2() end
+if hd == 3 then HSDMG3() end
+if hd == 4 then HOME() end
 end
 function HSDMG1()
 gg.clearResults()
@@ -199,10 +199,10 @@ gg.toast("NoRecoil 7½8")
 gg.clearResults()
 end
 function SIT()
-ps = gg.multiChoice ({"ON","OFF","<<BACK<<"},nil,"Menu ON/OFF Prone scope")
-if ps[1] == true then SITON() end
-if ps[2] == true then SITOFF() end
-if ps[3] == true then HOME() end
+ps = gg.choice ({"ON","OFF","<<BACK<<"},nil,"Menu ON/OFF Prone scope")
+if ps == 1 then SITON() end
+if ps == 2 then SITOFF() end
+if ps == 3 then HOME() end
 if ps == nil then else end
 end
 function SITON()
@@ -257,11 +257,11 @@ gg.clearResults()
 gg.toast("RunSpeed Up+ OFF")
 end
 function SPD()
-cd = gg.multiChoice ({"Lvl 1","Lvl 2","OFF (beta)","<<BACK<<"},nil,"Menu Level Speedhack")
-if cd[1] == true then SPD1() end
-if cd[2] == true then SPD2() end
-if cd[3] == true then SPDOFF() end
-if cd[4] == true then HOME() end
+cd = gg.choice ({"Lvl 1","Lvl 2","OFF (beta)","<<BACK<<"},nil,"Menu Level Speedhack")
+if cd == 1 then SPD1() end
+if cd == 2 then SPD2() end
+if cd == 3 then SPDOFF() end
+if cd == 4 then HOME() end
 if cd == nil then else end
 end
 function ATNHD()
