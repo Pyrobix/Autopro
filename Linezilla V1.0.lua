@@ -6,6 +6,7 @@ function HOME()
   MN = gg.choice({
     "Lobby",
     "In Game",
+    "Test Menu",
     
     "Exit"
   }, nil, "Linezilla v1.0")
@@ -13,9 +14,8 @@ function HOME()
   else
     if MN == 1 then MENU1() end
     if MN == 2 then MENU2() end
-    if MN == 3 then
-     CLOSE()
-    end
+    if MN == 3 then TESTMENU() end
+    if MN == 4 then CLOSE() end
   end
   PUBGMH = -1
 end
@@ -24,6 +24,25 @@ function CLOSE()
   gg.skipRestoreState()
   gg.setVisible(true)
   os.exit()
+end
+
+function TESTMENU()
+ Result = gg.prompt({"Level 1","Level 2","Custom Value","Custom Value(Harus dicentang)\nMasukan Value antara 150 - 300"},{false,false,false,0},{"checkbox", "checkbox","checkbox","number"},nil,"Pilih AUTO HS + DMG")
+ if Result[1] then HSDMG1() end
+ if Result[2] then HSDMG2() end
+ if Result[3] and Result[4] then HSC{} end
+ if Result == nil then else end
+end
+
+function HSC()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll(Result[4], gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Custom Auto HS Activated")
+gg.clearResults()
 end
 
 function MENU1()
