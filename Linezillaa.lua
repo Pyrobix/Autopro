@@ -4,7 +4,7 @@ gg.alert("Online script by Robeth") --[[ 1 ]]
 
 function HOME()
   MN = gg.choice({
-    "Robeth All in One"
+    "Robeth All in One",
     "Lobby",
     "In Game",
     
