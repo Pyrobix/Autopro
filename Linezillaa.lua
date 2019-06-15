@@ -70,6 +70,7 @@ gg.clearResults()
 gg.toast("NoRecoil 7½8")
 gg.clearResults()
 end
+
 function CLOSE()
   print("Ciyee habis pakai merah merah")
   gg.skipRestoreState()
