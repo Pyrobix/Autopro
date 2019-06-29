@@ -112,8 +112,8 @@ end
 function LRCL()
   NR = gg.choice({
       "Less Recoil 100%",
-      "Less Recoil 50%%,
-      "Less Recoil 25%,
+      "Less Recoil 50%",
+      "Less Recoil 25%",
       
       "<< Back",
       }, nil "Menu Less Recoil")
