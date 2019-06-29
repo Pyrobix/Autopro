@@ -120,7 +120,7 @@ function LRCL()
   if NR == 1 then LRCL1() end
   if NR == 2 then LRCL2() end
   if NR == 3 then LRCL3() end
-  if NR == 4 them HOME() end
+  if NR == 4 then HOME() end
 end
 
 function LRCL1()
