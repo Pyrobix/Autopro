@@ -122,12 +122,12 @@ end
 
 function LRCL()
   NR = gg.choice({
-      "Less Recoil 100%",
-      "Less Recoil 50%",
-      "Less Recoil 25%",
+      "Less Recoil v1",
+      "Less Recoil v2 (rusak)",
+      "Less Recoil v3 (rusak)",
       
       "<< Back",
-      }, nil "Menu Less Recoil")
+      }, nil, "Menu Less Recoil")
   if NR == 1 then LRCL1() end
   if NR == 2 then LRCL2() end
   if NR == 3 then LRCL3() end
@@ -158,13 +158,13 @@ gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("1.5584387e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("1.5584387e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(100)
-gg.editAll("0", gg.TYPE_FLOAT)
+gg.editAll("0.2", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("1D;0.05000000075F;0.10000000149F;0.55000001192F;9.5F;15.0F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("1", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(100)
-gg.editAll("0.5", gg.TYPE_DWORD)
+gg.editAll("0.2", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("Less Recoil Activated")
 gg.clearResults()
@@ -176,7 +176,7 @@ gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("1.5584387e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("1.5584387e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(100)
-gg.editAll("0", gg.TYPE_FLOAT)
+gg.editAll("0.7", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("1D;0.05000000075F;0.10000000149F;0.55000001192F;9.5F;15.0F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
